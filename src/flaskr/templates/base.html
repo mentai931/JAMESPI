@@ -1,0 +1,19 @@
+<!doctype html>
+<html>
+<head>
+	<title>Nya~</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<nav>
+  		<ul>
+      			<li><a href="{{ url_for('auth.logout') }}">Log Out</a>
+  		</ul>
+	</nav>
+	<div class="main">
+		<p>test</p>
+  		{% block content %}{% endblock %}
+	</div>
+
+</body>
+</html>
