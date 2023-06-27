@@ -5,10 +5,10 @@ from flaskr.getData import getData
 main = Blueprint('main', __name__)
 
 @main.route('/')
-@main.route('/index')
+@main.route('/home')
 def index():
 
-    return "hello"
+    return render_template('home.html')
 
 @main.route('/test')
 def test():
